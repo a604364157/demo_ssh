@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.jjx.ssh.entity.User" table="user" schema="chat">
+        <id name="keyId" column="key_id"/>
+        <property name="userName" column="user_name"/>
+        <property name="nickName" column="nick_name"/>
+        <property name="password" column="password"/>
+        <property name="avatarUrl" column="avatar_url"/>
+        <property name="phone" column="phone"/>
+        <property name="qq" column="qq"/>
+        <property name="weChat" column="we_chat"/>
+        <property name="addTime" column="add_time"/>
+        <property name="addUser" column="add_user"/>
+        <property name="updateTime" column="update_time"/>
+        <property name="updateUser" column="update_user"/>
+        <property name="requestId" column="request_id"/>
+    </class>
+</hibernate-mapping>
